@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge: Grade Calculator</title>
+</head>
+<body>
+    <script>
+        let marks = prompt("Enter your mask to calculate your grade");
+
+        if(marks >= 70 && marks <=100){
+        alert("Your mark is " + marks + " therefore your grade is A ");
+        document.write("Your mark is " + marks + " therefore your grade is A ");
+        }
+
+        else if(marks >= 50 && marks <= 60){
+            alert("Your mark is " + marks + " therefore your grade is C ");
+        document.write("Your mark is " + marks + " therefore your grade is C ");
+        }
+
+        else if(marks >=0 && marks <= 40){
+            alert("Your mark is " + marks + " therefore your grade is F ");
+        document.write("Your mark is " + marks + " therefore your grade is F Sorry! ");
+        }
+        
+        else{
+            alert("Invalid marks");
+            document.write("Marks should be a number between 0 and 100")
+        }
+    </script>
+</body>
+</html>
