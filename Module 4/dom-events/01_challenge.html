@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge: Cat Clicker</title>
+
+    <style>
+        body {
+            font-family: Arial,  sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h2>Pet me!</h2>
+    <img id="cat-pic" src="https://www.kasandbox.org/programming-images/animals/thumbs/cat.png">
+    <br>
+    
+    <div id="cat-chat"></div>
+    
+    <script>
+        let catImg = document.getElementById('cat-pic');
+        let catSays = document.getElementById('cat-chat');
+
+        oncatImgClick = () => {
+            catSays.innerHTML = "Meowwwwwwnnnnnn!"
+        }
+
+        catImg.addEventListener("click", oncatImgClick)
+    </script>
+</body>
+</html>
